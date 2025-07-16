@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MINIGRANOLA | Recetas Saludables</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Estilos acordeón  */
+    .acordeon-btn {
+      background: #4caf50;
+      color: white;
+      cursor: pointer;
+      padding: 1rem 1.5rem;
+      width: 100%;
+      border: none;
+      text-align: left;
+      font-size: 1.4rem;
+      font-weight: 700;
+      border-radius: 12px;
+      margin-bottom: 0.5rem;
+      user-select: none;
+      transition: background 0.3s ease;
+    }
+    .acordeon-btn:hover {
+      background: #388e3c;
+    }
+    .acordeon-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease-out;
+      padding: 0 1.5rem;
+      margin-bottom: 2rem;
+    }
+    .recetas-grid {
+    padding-top: 1.5rem; /*espacio*/
+    padding-bottom: 1.5rem;
+}
+.receta {
+    background-color: #f0f8f0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+.receta h4 {
+    color: #43a047;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+.receta p {
+    font-size: 0.95rem;
+    color: #555;
+}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="inicio.html" class="logo" aria-label="Inicio MINIGRANOLA">
+      <img src="logo taller web.png" alt="Logo Mini Granola" style="height:70px" />
+      <span class="marca">MINIGRANOLA</span>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="menu" role="navigation" aria-label="Menú principal">
+      <a href="inicio.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="recetas.html" class="active">Recetas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="registro.html">Registrarse</a>
+    </div>
+  </nav>
+
+  <section class="recetas">
+    <h2 class="titulo-seccion">Recetas Saludables</h2>
+    <div class="acordeon">
+      <button class="acordeon-btn" aria-expanded="false">Desayunos Saludables</button>
+      <div class="acordeon-content">
+        <div class="recetas-grid">
+          <div class="receta">
+            <h4>1. Tostadas integrales con aguacate y tomate</h4>
+            <p>Tostadas integrales, aguacate machacado, tomate en rodajas, sal y pimienta al gusto.</p>
+          </div>
+          <div class="receta">
+            <h4>2. Yogur griego con frutas y semillas</h4>
+            <p>Yogur griego, frutas frescas (fresas, arándanos), semillas de chía o linaza.</p>
+          </div>
+          <div class="receta">
+            <h4>3. Avena con plátano y miel</h4>
+            <p>Avena cocida en leche vegetal, plátano en rodajas, miel y canela.</p>
+          </div>
+          <div class="receta">
+            <h4>4. Huevos revueltos con espinacas</h4>
+            <p>Huevos revueltos, espinacas frescas, aceite de oliva, sal y pimienta.</p>
+          </div>
+          <div class="receta">
+            <h4>5. Smoothie de frutas y espinaca</h4>
+            <p>Plátano, manzana, espinaca, leche vegetal y hielo. Licuar y servir.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  <div class="acordeon">
+      <button class="acordeon-btn" aria-expanded="false">Almuerzos Saludables</button>
+      <div class="acordeon-content">
+        <div class="recetas-grid">
+      <div class="receta">    
+      <h4>1. Ensalada de quinoa y verduras</h4>
+            <p>Quinoa cocida, tomate, pepino, zanahoria, aguacate, limón y aceite de oliva.</p>
+          </div>
+          <div class="receta">
+            <h4>2. Pechuga de pollo a la plancha con brócoli</h4>
+            <p>Pechuga de pollo, brócoli al vapor, arroz integral, aceite de oliva.</p>
+          </div>
+          <div class="receta">
+            <h4>3. Lentejas con verduras</h4>
+            <p>Lentejas cocidas, zanahoria, cebolla, pimiento, tomate y especias.</p>
+          </div>
+          <div class="receta">
+            <h4>4. Salmón al horno con espárragos</h4>
+            <p>Salmón, espárragos, limón, aceite de oliva, sal y pimienta.</p>
+          </div>
+          <div class="receta">
+            <h4>5. Wrap de pollo y vegetales</h4>
+            <p>Tortilla integral, pechuga de pollo, lechuga, tomate, aguacate y mostaza.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+       <div class="acordeon">
+      <button class="acordeon-btn" aria-expanded="false">Cenas Saludables</button>
+      <div class="acordeon-content">
+        <div class="recetas-grid" >
+      <div class="receta">    
+      <h4>1. Tortilla de vegetales</h4>
+            <p>Huevos, espinaca, tomate, cebolla, aceite de oliva, sal y pimienta.</p>
+          </div>
+          <div class="receta">
+            <h4>2. Crema de calabaza</h4>
+            <p>Calabaza, cebolla, caldo vegetal, leche vegetal, sal y pimienta.</p>
+          </div>
+          <div class="receta">
+            <h4>3. Pescado al horno con verduras</h4>
+            <p>Filete de pescado blanco, zanahoria, calabacín, limón, aceite de oliva.</p>
+          </div>
+          <div class="receta">
+            <h4>4. Ensalada de garbanzos</h4>
+            <p>Garbanzos cocidos, tomate, pepino, pimiento, aceite de oliva y limón.</p>
+          </div>
+          <div class="receta">
+            <h4>5. Pollo a la plancha con ensalada</h4>
+            <p>Pechuga de pollo, lechuga, tomate, aguacate, limón y aceite de oliva.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo taller web.png" alt="Logo Mini Granola" style="height:40px; vertical-align: middle;" />
+        <span>MINIGRANOLA</span>
+      </div>
+      <div class="contacto" aria-label="Información de contacto">
+        <p><i class="fas fa-phone"></i> +51 987 654 321</p>
+        <p><i class="fas fa-envelope"></i> contacto@minigranola.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Av. San Martin, Ica, Perú</p>
+      </div>
+      <div class="social" aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 MINIGRANOLA. Todos los derechos reservados.
+    </div>
+    <div class="copyright">
+      &copy; “El que come bien tiene salud, y el que tiene salud lo tiene todo”
+    </div>
+  </footer>
+
+ <button id="chatbot-btn" class="btn-carrito" style="right: 80px;" aria-label="Abrir chatbot">
+    <i class="fas fa-robot"></i>
+  </button>
+
+  <div id="chatbot-modal" class="chatbot-modal" role="dialog" aria-modal="true" aria-labelledby="chatbot-title" aria-hidden="true">
+    <div class="chatbot-header">
+      <h3 id="chatbot-title">Chatbot MINIGRANOLA</h3>
+      <button id="cerrar-chatbot" aria-label="Cerrar chatbot">&times;</button>
+    </div>
+    <div id="chatbot-body" class="chatbot-body" tabindex="0">
+      <p class="chatbot-bienvenida">¡Hola! Soy el chatbot de MINIGRANOLA. ¿En qué puedo ayudarte?</p>
+    </div>
+    <div class="chatbot-footer">
+      <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje..." aria-label="Mensaje del chatbot" />
+      <button id="enviar-chatbot" aria-label="Enviar mensaje">Enviar</button>
+    </div>
+  </div>
+ 
+
+  <script src="https://checkout.culqi.com/js/v4/culqi.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+  <script src="chatbot.js"></script>
+  <script>
+// Código simplificado de prueba
+document.addEventListener('DOMContentLoaded', () => {
+    const buttons = document.querySelectorAll('.acordeon-btn');
+    
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const content = this.nextElementSibling;
+            content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+            this.setAttribute('aria-expanded', content.style.maxHeight ? 'true' : 'false');
+        });
+    });
+});
+
+</script>
+</body>
+</html>

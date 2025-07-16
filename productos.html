@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MINIGRANOLA | Productos con Culqi</title>
+
+  <!-- Estilos CSS -->
+  <link rel="stylesheet" href="estilos.css" />
+
+  <!-- FontAwesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <!-- Fuente Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Script Culqi -->
+  <script src="https://checkout.culqi.com/js/v4"></script>
+</head>
+<body>
+  <!-- Navegación -->
+  <nav class="nav">
+    <a href="inicio.html" class="logo" aria-label="Inicio MINIGRANOLA">
+      <img src="logo taller web.png" alt="Logo Mini Granola" style="height:70px" />
+      <span class="marca">MINIGRANOLA</span>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="menu" role="navigation" aria-label="Menú principal">
+      <a href="inicio.html">Inicio</a>
+      <a href="productos.html" class="active">Productos</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="recetas.html">Recetas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="registro.html">Registrarse</a>
+    </div>
+  </nav>
+
+  <!-- Sección productos -->
+    <section class="productos">
+  <h2 class="titulo-seccion">Nuestros Productos</h2>
+
+  <div class="banners-contenedor">
+    <a href="#snack" class="banners-productos">
+      <div class="banner">
+        <img src="1.png" alt="Snacks saludables" />
+        <h3>Snacks Saludables</h3>
+      </div>
+    </a>
+    <a href="#postres" class="banners-productos">
+      <div class="banner">
+        <img src="2.png" alt="Postres saludables" />
+        <h3>Postres Saludables</h3>
+      </div>
+    </a>
+    <a href="#bebida" class="banners-productos">
+      <div class="banner">
+        <img src="3.png" alt="Bebidas naturales" />
+        <h3>Bebidas Naturales</h3>
+      </div>
+    </a>
+  </div>
+    </section>
+
+    <!-- Snacks Saludables -->
+    <h3 id="snack" class="titulo-seccion">Snacks Saludables</h3>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="Mix energetico.jpg" alt="Mix energético" />
+        <h4>Mix energético</h4>
+        <p>Frutos secos (almendras, nueces, maní) + pasas y semillas</p>
+        <span class="precio">$2.50</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="barras de granola caseras.jpg" alt="Barras de granola caseras" />
+        <h4>Barras de granola caseras</h4>
+        <p>Con avena, miel, coco rallado y semillas</p>
+        <span class="precio">$2.00</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="chips de platano al horno.jpg" alt="Chips de plátano al horno" />
+        <h4>Chips de plátano al horno</h4>
+        <p>Crujientes y sin frituras, ideales para media mañana</p>
+        <span class="precio">$1.80</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="crackers integrales.jpg" alt="Crackers integrales" />
+        <h4>Crackers integrales</h4>
+        <p>Galletas saladas hechas con linaza, avena y especias</p>
+        <span class="precio">$2.20</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="popcorn natural light.jpg" alt="Popcorn natural light" />
+        <h4>Popcorn natural light</h4>
+        <p>Palomitas con sal marina y aceite de coco</p>
+        <span class="precio">$1.50</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="Snack Minigranola.jpg" alt="Snack Minigranola" />
+        <h4>Snack Minigranola</h4>
+        <p>Mini porción de granola con nibs de cacao y arándanos secos</p>
+        <span class="precio">$2.00</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+    </div>
+
+    <!-- Postres Saludables -->
+    <h3 id="postres" class="titulo-seccion">Postres Saludables</h3>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="brownie de platano y avena.jpg" alt="Brownie de avena y plátano" />
+        <h4>Brownie de avena y plátano</h4>
+        <p>Sin azúcar, sin harina refinada. Suave y chocolatoso</p>
+        <span class="precio">$2.70</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="trufas energeticas.jpg" alt="Trufas energéticas" />
+        <h4>Trufas energéticas</h4>
+        <p>Bolas de dátiles, avena y cacao. Veganas y sin gluten</p>
+        <span class="precio">$2.30</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="Mouse de chia con cacao.jpg" alt="Mousse de chía con cacao" />
+        <h4>Mousse de chía con cacao</h4>
+        <p>Textura cremosa con leche vegetal y toque de miel</p>
+        <span class="precio">$2.50</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="arta fría de yogurt y frutas.jpg" alt="Tarta fría de yogurt y frutas" />
+        <h4>Tarta fría de yogurt y frutas</h4>
+        <p>Base de granola + capa de yogurt + frutas frescas</p>
+        <span class="precio">$2.80</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="Manzana al horno con canela.jpg" alt="Manzana al horno con canela" />
+        <h4>Manzana al horno con canela</h4>
+        <p>Postre clásico, endulzado naturalmente</p>
+        <span class="precio">$2.20</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+    </div>
+
+    <!-- Bebidas Naturales -->
+    <h3 id="bebida" class= "titulo-seccion">Bebidas Naturales</h3>
+    <div class="productos-grid">
+      <div class="producto">
+        <img src="Smoothie frutal.jpg" alt="Smoothie frutal" />
+        <h4>Smoothie frutal</h4>
+        <p>Elige la fruta que prefieras:</p>
+        <select class="smoothie-fruta">
+          <option value="fresa">Fresa</option>
+          <option value="mango">Mango</option>
+          <option value="banana">Banana</option>
+          <option value="maracuya">Maracuyá</option>
+        </select>
+        <span class="precio">$2.90</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="Golden milk.jpg" alt="Golden milk" />
+        <h4>Golden milk (Leche dorada)</h4>
+        <p>Leche vegetal con cúrcuma, canela, jengibre y miel</p>
+        <span class="precio">$2.50</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="Limonada con hierba luisa.png" alt="Limonada con hierba luisa" />
+        <h4>Limonada con hierba luisa</h4>
+        <p>Refrescante mezcla natural con infusión de hierba luisa y limón</p>
+        <span class="precio">$2.00</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="Refresco de maracuya + chia.png" alt="Refresco de maracuyá + chía" />
+        <h4>Refresco de maracuyá + chía</h4>
+        <p>Jugo natural de maracuyá con semillas de chía activadas</p>
+        <span class="precio">$2.20</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+
+      <div class="producto">
+        <img src="Matcha latte frio.jpg" alt="Matcha latte frío" />
+        <h4>Matcha latte frío</h4>
+        <p>Té matcha orgánico batido con leche vegetal, vainilla y hielo</p>
+        <span class="precio">$2.80</span>
+        <button class="btn-agregar">Añadir al carrito</button>
+      </div>
+    </div>
+  </section>
+
+
+   <!-- Botón carrito flotante -->
+  <button class="btn-carrito" id="btn-carrito" aria-label="Abrir carrito de compras">
+    <i class="fas fa-shopping-cart"></i>
+    <span id="contador-carrito">0</span>
+  </button>
+
+  <!-- Offcanvas carrito -->
+  <div class="carrito-offcanvas" id="carrito-offcanvas" role="dialog" aria-modal="true" aria-labelledby="carrito-title" aria-hidden="true">
+    <div class="carrito-header">
+      <h3 id="carrito-title">Tu carrito</h3>
+      <button class="cerrar-carrito" id="cerrar-carrito" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <div class="carrito-body" id="carrito-body">
+      <p class="carrito-vacio">El carrito está vacío.</p>
+    </div>
+    <div class="carrito-footer">
+      <div class="carrito-total">
+        <span>Total:</span>
+        <span id="carrito-total">$0.00</span>
+      </div>
+      <button class="btn-comprar" id="btn-comprar">Comprar</button>
+    </div>
+  </div>
+
+  <!-- Modal Gracias -->
+  <div id="modal-gracias" style="
+    display:none; position: fixed; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+    background: #4caf50; color: white; padding: 2rem 3rem; 
+    border-radius: 15px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    font-size: 1.5rem; z-index: 11000; text-align: center;
+  ">
+    🎉 ¡Gracias por tu compra en MINIGRANOLA! 🎉
+  </div>
+
+  <!-- FontAwesome para iconos -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  
+
+  <!-- Tu script -->
+ <script src="script.js"></script>
+
+</body>
+</html>

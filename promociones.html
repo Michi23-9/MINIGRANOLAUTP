@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MINIGRANOLA | Promociones</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+ <!-- Navegación -->
+  <nav class="nav">
+    <a href="inicio.html" class="logo" aria-label="Inicio MINIGRANOLA">
+      <img src="logo taller web.png" alt="Logo Mini Granola" style="height:70px" />
+      <span class="marca">MINIGRANOLA</span>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="menu" role="navigation" aria-label="Menú principal">
+      <a href="inicio.html">Inicio</a>
+      <a href="productos.html" class="active">Productos</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="recetas.html">Recetas</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="registro.html">Registrarse</a>
+    </div>
+  </nav>
+  <section class="promociones">
+    <h2 class="titulo-seccion">Promociones Destacadas</h2>
+    <div class="promo-grid">
+      <div class="promo-card">
+        <div class="promo-img" style="background-image:url('https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=cover&w=400&q=80');" role="img" aria-label="Imagen de combo snack y bebida"></div>
+        <h3>¡Combo Snack + Bebida!</h3>
+        <p>Llévate un mix energético + smoothie frutal por solo <span class="promo-precio">$4.99</span></p>
+        <a href="registro.html" class="btn-promo">¡Quiero mi combo!</a>
+      </div>
+      <div class="promo-card">
+        <div class="promo-img" style="background-image:url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=cover&w=400&q=80');" role="img" aria-label="Imagen de postres 2x1"></div>
+        <h3>2x1 en Postres</h3>
+        <p>Compra cualquier postre saludable y llévate el segundo a mitad de precio.</p>
+        <a href="registro.html" class="btn-promo">Aprovecha la oferta</a>
+      </div>
+      <div class="promo-card">
+        <div class="promo-img" style="background-image:url('https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=cover&w=400&q=80');" role="img" aria-label="Imagen de descuento por registro"></div>
+        <h3>Descuento en tu primer registro</h3>
+        <p>Regístrate y obtén <span class="promo-precio">10% OFF</span> en tu primera compra.</p>
+        <a href="registro.html" class="btn-promo">Regístrate ahora</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo taller web.png" alt="Logo Mini Granola" style="height:40px; vertical-align: middle;" />
+        <span>MINIGRANOLA</span>
+      </div>
+      <div class="contacto" aria-label="Información de contacto">
+        <p><i class="fas fa-phone"></i> +51 987 654 321</p>
+        <p><i class="fas fa-envelope"></i> contacto@minigranola.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Av. San Martin, Ica, Perú</p>
+      </div>
+      <div class="social" aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 MINIGRANOLA. Todos los derechos reservados.
+    </div>
+    <div class="copyright">
+      &copy; “El que come bien tiene salud, y el que tiene salud lo tiene todo”
+    </div>
+  </footer>
+ <button id="chatbot-btn" class="btn-carrito" style="right: 80px;" aria-label="Abrir chatbot">
+    <i class="fas fa-robot"></i>
+  </button>
+ <div id="chatbot-modal" class="chatbot-modal" role="dialog" aria-modal="true" aria-labelledby="chatbot-title" aria-hidden="true">
+    <div class="chatbot-header">
+      <h3 id="chatbot-title">Chatbot MINIGRANOLA</h3>
+      <button id="cerrar-chatbot" aria-label="Cerrar chatbot">&times;</button>
+    </div>
+    <div id="chatbot-body" class="chatbot-body" tabindex="0">
+      <p class="chatbot-bienvenida">¡Hola! Soy el chatbot de MINIGRANOLA. ¿En qué puedo ayudarte?</p>
+    </div>
+    <div class="chatbot-footer">
+      <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje..." aria-label="Mensaje del chatbot" />
+      <button id="enviar-chatbot" aria-label="Enviar mensaje">Enviar</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+   <script src="chatbot.js"></script>
+  <script>
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle');
+  const menu = document.querySelector('.menu');
+  if (menuToggle && menu) {
+    menuToggle.addEventListener('click', () => {
+      menu.classList.toggle('activo');
+    });
+  }
+});
+</script>
+</body>
+</html>

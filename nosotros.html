@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MINIGRANOLA | Nosotros</title>
+  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    /* Estilos para slider Nosotros */
+    .slider {
+      position: relative;
+      max-width: 900px;
+      margin: 3rem auto 4rem;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      background: #f0f8f0;
+      user-select: none;
+    }
+    .slide {
+      display: none;
+      padding: 2rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      transition: opacity 0.5s ease;
+    }
+    .slide.active {
+      display: flex;
+    }
+    .slider-prev, .slider-next {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(76,175,80,0.8);
+      border: none;
+      color: white;
+      font-size: 2.5rem;
+      padding: 0 0.7rem;
+      cursor: pointer;
+      border-radius: 50%;
+      user-select: none;
+      transition: background 0.3s ease;
+      z-index: 10;
+    }
+    .slider-prev:hover, .slider-next:hover {
+      background: #388E3C;
+    }
+    .slider-prev {
+      left: 10px;
+    }
+    .slider-next {
+      right: 10px;
+    }
+    .nosotros-img {
+      width: 350px;
+      height: 350px;
+      object-fit: cover;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      flex-shrink: 0;
+      cursor: default;
+    }
+    .nosotros-texto {
+      flex: 1;
+      font-size: 1.15rem;
+      color: #444;
+      line-height: 1.6;
+    }
+    .nosotros-texto h3 {
+      color: #43a047;
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="inicio.html" class="logo" aria-label="Inicio MINIGRANOLA">
+      <img src="logo taller web.png" alt="Logo Mini Granola" style="height:70px" />
+      <span class="marca">MINIGRANOLA</span>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="menu" role="navigation" aria-label="Menú principal">
+      <a href="inicio.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="promociones.html">Promociones</a>
+      <a href="recetas.html">Recetas</a>
+      <a href="nosotros.html" class="active">Nosotros</a>
+      <a href="registro.html">Registrarse</a>
+    </div>
+  </nav>
+
+  <section class="nosotros">
+    <h2 class="titulo-seccion">Nosotros</h2>
+    <div class="slider" aria-label="Carrusel de información sobre Nosotros">
+      <div class="slide active" role="group" aria-roledescription="slide" aria-label="Slide 1">
+        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=cover&w=400&q=80" alt="Equipo MINIGRANOLA" class="nosotros-img" />
+        <div class="nosotros-texto">
+          <h3>MINIGRANOLA: Tu bienestar, nuestra pasión</h3>
+          <p>En MINIGRANOLA, nos dedicamos con pasión a ofrecer productos alimenticios que no solo son deliciosos, sino también profundamente nutritivos y respetuosos con tu cuerpo.</p>
+        </div>
+      </div>
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 2">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=cover&w=400&q=80" alt="Nuestro equipo" class="nosotros-img" />
+        <div class="nosotros-texto">
+          <h3>Innovación y calidad</h3>
+          <p>Contamos con un equipo de expertos en nutrición y gastronomía que trabajan incansablemente para innovar y perfeccionar cada receta.</p>
+        </div>
+      </div>
+      <div class="slide" role="group" aria-roledescription="slide" aria-label="Slide 3">
+        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=cover&w=400&q=80" alt="Comunidad MINIGRANOLA" class="nosotros-img" />
+        <div class="nosotros-texto">
+          <h3>Comunidad y bienestar</h3>
+          <p>Fomentamos una comunidad donde el bienestar y la alimentación consciente son protagonistas.</p>
+        </div>
+      </div>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="logo taller web.png" alt="Logo Mini Granola" style="height:40px; vertical-align: middle;" />
+        <span>MINIGRANOLA</span>
+      </div>
+      <div class="contacto" aria-label="Información de contacto">
+        <p><i class="fas fa-phone"></i> +51 987 654 321</p>
+        <p><i class="fas fa-envelope"></i> contacto@minigranola.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> Av. San Martin, Ica, Perú</p>
+      </div>
+      <div class="social" aria-label="Redes sociales">
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+    <div class="copyright">
+      &copy; 2025 MINIGRANOLA. Todos los derechos reservados.
+    </div>
+    <div class="copyright">
+      &copy; “El que come bien tiene salud, y el que tiene salud lo tiene todo”
+    </div>
+    </footer>
+
+  <button id="chatbot-btn" class="btn-carrito" style="right: 80px;" aria-label="Abrir chatbot">
+    <i class="fas fa-robot"></i>
+  </button>
+
+  <div id="chatbot-modal" class="chatbot-modal" role="dialog" aria-modal="true" aria-labelledby="chatbot-title" aria-hidden="true">
+    <div class="chatbot-header">
+      <h3 id="chatbot-title">Chatbot MINIGRANOLA</h3>
+      <button id="cerrar-chatbot" aria-label="Cerrar chatbot">&times;</button>
+    </div>
+    <div id="chatbot-body" class="chatbot-body" tabindex="0">
+      <p class="chatbot-bienvenida">¡Hola! Soy el chatbot de MINIGRANOLA. ¿En qué puedo ayudarte?</p>
+    </div>
+    <div class="chatbot-footer">
+      <input type="text" id="chatbot-input" placeholder="Escribe tu mensaje..." aria-label="Mensaje del chatbot" />
+      <button id="enviar-chatbot" aria-label="Enviar mensaje">Enviar</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="chatbot.js"></script>
+</body>
+</html>
